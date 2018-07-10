@@ -1,0 +1,188 @@
+
+Shape of Dataset, # of People & Features: (146, 21)
+
+<pandas.core.groupby.DataFrameGroupBy object at 0x00000000028E7470>
+# of POIs: True = POI; False = Not POI
+False    128
+True      18
+Name: poi, dtype: int64
+
+
+Total Number of Features: 19
+
+
+Running GridSearchCV for LogisticRegression.
+Fitting 100 folds for each of 40 candidates, totalling 4000 fits
+Running GridSearchCV for DecisionTreeClassifier.
+Fitting 100 folds for each of 1 candidates, totalling 100 fits
+
+                 estimator min_score mean_score max_score  std_score  \
+34      LogisticRegression         0   0.389325       0.8    0.17496
+39      LogisticRegression         0   0.389325       0.8    0.17496
+38      LogisticRegression         0   0.375967       0.8   0.175525
+33      LogisticRegression         0   0.375967       0.8   0.175525
+29      LogisticRegression         0   0.368069       0.8   0.155072
+24      LogisticRegression         0   0.368069       0.8   0.155072
+23      LogisticRegression         0   0.350382       0.8   0.148243
+28      LogisticRegression         0   0.350382       0.8   0.148243
+22      LogisticRegression         0   0.350344  0.666667   0.147134
+27      LogisticRegression         0   0.350344  0.666667   0.147134
+37      LogisticRegression         0   0.348705       0.8   0.165809
+32      LogisticRegression         0   0.348705       0.8   0.165809
+31      LogisticRegression         0    0.33133     0.625   0.148337
+36      LogisticRegression         0    0.33133     0.625   0.148337
+30      LogisticRegression         0   0.329944  0.615385   0.127335
+35      LogisticRegression         0   0.329944  0.615385   0.127335
+12      LogisticRegression         0   0.327694  0.615385   0.119386
+17      LogisticRegression         0   0.327694  0.615385   0.119386
+26      LogisticRegression         0   0.321093  0.833333   0.135045
+21      LogisticRegression         0   0.321093  0.833333   0.135045
+14      LogisticRegression         0   0.321022  0.666667   0.121931
+19      LogisticRegression         0   0.321022  0.666667   0.121931
+7       LogisticRegression  0.117647   0.320797  0.571429  0.0942355
+2       LogisticRegression  0.117647   0.320797  0.571429  0.0942355
+1       LogisticRegression  0.111111   0.314373  0.571429   0.093936
+6       LogisticRegression  0.111111   0.314373  0.571429   0.093936
+18      LogisticRegression         0   0.314282  0.666667    0.11712
+13      LogisticRegression         0   0.314282  0.666667    0.11712
+8       LogisticRegression         0   0.312526  0.533333   0.108928
+3       LogisticRegression         0   0.312526  0.533333   0.108928
+25      LogisticRegression         0   0.311884  0.769231   0.133421
+20      LogisticRegression         0   0.311884  0.769231   0.133421
+16      LogisticRegression         0   0.306287  0.666667    0.11182
+11      LogisticRegression         0   0.306287  0.666667    0.11182
+9       LogisticRegression         0   0.304228  0.533333  0.0987417
+4       LogisticRegression         0   0.304228  0.533333  0.0987417
+0       LogisticRegression         0    0.30315  0.588235   0.106964
+5       LogisticRegression         0    0.30315  0.588235   0.106964
+15      LogisticRegression         0   0.298099  0.571429   0.105751
+10      LogisticRegression         0   0.298099  0.571429   0.105751
+40  DecisionTreeClassifier         0   0.260201      0.75   0.172082
+
+   CLF__class_weight CLF__random_state dim_red__n_components  \
+34          balanced                42                    10
+39          balanced                42                    10
+38          balanced                42                    10
+33          balanced                42                    10
+29          balanced                42                     8
+24          balanced                42                     8
+23          balanced                42                     8
+28          balanced                42                     8
+22          balanced                42                     8
+27          balanced                42                     8
+37          balanced                42                    10
+32          balanced                42                    10
+31          balanced                42                    10
+36          balanced                42                    10
+30          balanced                42                    10
+35          balanced                42                    10
+12          balanced                42                     6
+17          balanced                42                     6
+26          balanced                42                     8
+21          balanced                42                     8
+14          balanced                42                     6
+19          balanced                42                     6
+7           balanced                42                     4
+2           balanced                42                     4
+1           balanced                42                     4
+6           balanced                42                     4
+18          balanced                42                     6
+13          balanced                42                     6
+8           balanced                42                     4
+3           balanced                42                     4
+25          balanced                42                     8
+20          balanced                42                     8
+16          balanced                42                     6
+11          balanced                42                     6
+9           balanced                42                     4
+4           balanced                42                     4
+0           balanced                42                     4
+5           balanced                42                     4
+15          balanced                42                     6
+10          balanced                42                     6
+40               NaN                42                   NaN
+
+   dim_red__random_state dim_red__svd_solver selector__k
+34                    42                auto          18
+39                    42                full          18
+38                    42                full          16
+33                    42                auto          16
+29                    42                full          18
+24                    42                auto          18
+23                    42                auto          16
+28                    42                full          16
+22                    42                auto          14
+27                    42                full          14
+37                    42                full          14
+32                    42                auto          14
+31                    42                auto          12
+36                    42                full          12
+30                    42                auto          10
+35                    42                full          10
+12                    42                auto          14
+17                    42                full          14
+26                    42                full          12
+21                    42                auto          12
+14                    42                auto          18
+19                    42                full          18
+7                     42                full          14
+2                     42                auto          14
+1                     42                auto          12
+6                     42                full          12
+18                    42                full          16
+13                    42                auto          16
+8                     42                full          16
+3                     42                auto          16
+25                    42                full          10
+20                    42                auto          10
+16                    42                full          12
+11                    42                auto          12
+9                     42                full          18
+4                     42                auto          18
+0                     42                auto          10
+5                     42                full          10
+15                    42                full          10
+10                    42                auto          10
+40                    42                 NaN          11
+
+clf:  Pipeline(memory=None,
+     steps=[('scaling', StandardScaler(copy=True, with_mean=True, with_std=True)),
+     ('selector', SelectKBest(k=18, score_func=<function f_classif at 0x0000000008F1F278>)),
+     ('dim_red', PCA(copy=True, iterated_power='auto', n_components=10, random_state=42,
+  svd_solver='auto', tol=0.0, whiten=False)), ('CL...,
+          random_state=42, solver='liblinear', tol=1e-10, verbose=0,
+          warm_start=False))])
+
+Singular Value Weights for PCA Components:
+[ 40.45434085  22.24931998  13.75162006   8.85101502   8.21815667
+   7.59475027   6.70675498   3.35374455   3.0649962    2.8124148 ]
+Feature Ranking:
+feature no. 1: percent_msg_w_poi (10.425279413)
+feature no. 2: shared_receipt_with_poi (8.90382155717)
+feature no. 3: from_poi_to_this_person (5.44668748333)
+feature no. 4: loan_advances (2.51826104452)
+feature no. 5: from_this_person_to_poi (2.47052122266)
+feature no. 6: to_messages (1.75169427903)
+feature no. 7: director_fees (0.54908420148)
+feature no. 8: total_payments (0.349627153043)
+feature no. 9: deferral_payments (0.238995889853)
+feature no. 10: exercised_stock_options (0.228267337291)
+feature no. 11: total_stock_value (0.16611912321)
+feature no. 12: from_messages (0.158770239213)
+feature no. 13: bonus (0.0779488557772)
+feature no. 14: other (0.0681945191596)
+feature no. 15: restricted_stock (0.0313332162976)
+feature no. 16: long_term_incentive (0.0222292708616)
+feature no. 17: expenses (0.0139784138218)
+feature no. 18: salary (0.000160054245696)
+
+Tester Classification report :
+Pipeline(memory=None,
+     steps=[('scaling', StandardScaler(copy=True, with_mean=True, with_std=True)),
+     ('selector', SelectKBest(k=18, score_func=<function f_classif at 0x0000000008F1F278>)),
+     ('dim_red', PCA(copy=True, iterated_power='auto', n_components=10, random_state=42,
+  svd_solver='auto', tol=0.0, whiten=False)), ('CL...,
+          random_state=42, solver='liblinear', tol=1e-10, verbose=0,
+          warm_start=False))])
+	Accuracy: 0.82380	Precision: 0.40591	Recall: 0.69350	F1: 0.51209	F2: 0.60743
+	Total predictions: 15000	True positives: 1387	False positives: 2030	False negatives:  613	True negatives: 10970
