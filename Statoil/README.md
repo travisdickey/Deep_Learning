@@ -1,3 +1,3 @@
 ## Statoil Iceberg Challenge
 
-Statoil iceberg challenge on Kaggle.
+Applying Fast.ai's "Dogs vs Cats" notebook to the [Kaggle Statoil Iceberg Challenge](https://www.kaggle.com/c/statoil-iceberg-classifier-challenge).
